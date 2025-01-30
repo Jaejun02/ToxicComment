@@ -20,7 +20,7 @@ Online discussions often contain harmful content, making automated moderation cr
 1️⃣ **Clone the repository** from GitHub:
 ```bash
 git clone <https://github.com/Jaejun02/ToxicComment.git>
-cd toxic-comment-classifier
+cd ToxicComment
 ```
 2️⃣ Install dependencies through **Conda environment**:
 ```bash
