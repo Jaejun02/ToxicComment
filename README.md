@@ -49,6 +49,7 @@ chmod 600 ~/.kaggle/kaggle.json
 ## 🚀 Usage
 ☑️ **Hyperparameter Tuning**
 Set `HP_TUNING = True` in `Config` class and run `toxic_comment_classifier.ipynb`.
+
 ☑️ **Further Tuning and Final Training**
 Set `FT_TUNING = True` and `FULL_TRAINING = True` in `Config` class and rurn `toxic_comment_classifier.ipynb`.
 
