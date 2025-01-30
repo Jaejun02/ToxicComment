@@ -60,6 +60,3 @@ llms.bak/
 
 # model.safetensors file
 model.safetensors
-
-# .gitignore
-.gitignore
