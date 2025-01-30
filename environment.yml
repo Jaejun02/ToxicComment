@@ -1,0 +1,22 @@
+name: toxiccs
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+  - nvidia
+dependencies:
+  - python=3.10
+  - pip
+  - numpy=1.26.4
+  - pandas=2.2.2
+  - scikit-learn=1.2.2
+  - pytorch=2.5.1
+  - torchvision=0.20.0
+  - torchaudio=2.5.0
+  - pytorch-cuda=12.1
+  - pip:
+      - transformers==4.47.0
+      - optuna==4.1.0
+      - iterative-stratification==0.1.9
+      - contractions==0.1.73
+      - joblib==1.4.2
