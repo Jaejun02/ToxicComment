@@ -31,9 +31,13 @@ conda activate toxic-comment-classifier
 git clone <https://github.com/Jaejun02/ToxicComment.git>
 cd toxic-comment-classifier
 ```
-2️⃣ **Open the Jupyter Notebook** (`toxic_comment_classifier.ipynb`) in JupyterLab or another compatible environment.
+2️⃣ To combine the model files, run:
+```bash
+cat ./saved_model/model.safetensors_* > ./saved_model/model.safetensors
+```
+3️⃣ **Open the Jupyter Notebook** (`toxic_comment_classifier.ipynb`) in JupyterLab or another compatible environment.
 
-3️⃣ **Execute the cells** in order to preprocess data, train the model, and evaluate results.
+4️⃣ **Execute the cells** in order to preprocess data, train the model, and evaluate results.
 
 ---
 ## 📊 Model Evaluation
