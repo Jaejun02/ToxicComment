@@ -17,31 +17,45 @@ Online discussions often contain harmful content, making automated moderation cr
 
 ---
 ## ⚙️ Installation
-### Prerequisites
-Ensure you have Python installed and set up a **Conda environment**:
-```bash
-conda env create -f environment.yml
-conda activate toxic-comment-classifier
-```
-
----
-## 🚀 Usage
 1️⃣ **Clone the repository** from GitHub:
 ```bash
 git clone <https://github.com/Jaejun02/ToxicComment.git>
 cd toxic-comment-classifier
 ```
-2️⃣ **To combine the model files**, run:
+2️⃣ Install dependencies through **Conda environment**:
+```bash
+conda env create -f environment.yml
+conda activate toxiccs
+```
+3️⃣ **Combine the model files** by running:
 ```bash
 cat ./saved_model/model.safetensors_* > ./saved_model/model.safetensors
 ```
-3️⃣ **Open the Jupyter Notebook** (`toxic_comment_classifier.ipynb`) in JupyterLab or another compatible environment.
+4️⃣ **Download your Kaggle API key** by going to Kaggle, then going to your account settings and clicking **Create New API Token**.
 
-4️⃣ **Execute the cells** in order to preprocess data, train the model, and evaluate results.
+5️⃣ **Set up your Kaggle API key** by running:
+```bash
+mkdir -p ~/.kaggle
+mv /path/to/your/kaggle.json ~/.kaggle/kaggle.json
+chmod 600 ~/.kaggle/kaggle.json
+```
+
+6️⃣ **Open the Jupyter Notebook** (`toxic_comment_classifier.ipynb`) in JupyterLab or another compatible environment.
+
+7️⃣ **Execute the cells** in order to preprocess data, train the model, and evaluate results.
+
+
+---
+## 🚀 Usage
+☑️ **Hyperparameter Tuning**
+Set `HP_TUNING = True` in `Config` class and run `toxic_comment_classifier.ipynb`.
+☑️ **Further Tuning and Final Training**
+Set `FT_TUNING = True` and `FULL_TRAINING = True` in `Config` class and rurn `toxic_comment_classifier.ipynb`.
+
 
 ---
 ## 📊 Model Evaluation
-The model is evaluated using **F1-score** and **cross-validation** techniques. Training metrics are logged to ensure transparency and performance tracking.
+Best test F1 Score: 0.947.
 
 ---
 ## 📜 License
