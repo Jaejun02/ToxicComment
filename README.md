@@ -31,7 +31,7 @@ conda activate toxic-comment-classifier
 git clone <https://github.com/Jaejun02/ToxicComment.git>
 cd toxic-comment-classifier
 ```
-2️⃣ To combine the model files, run:
+2️⃣ **To combine the model files**, run:
 ```bash
 cat ./saved_model/model.safetensors_* > ./saved_model/model.safetensors
 ```
